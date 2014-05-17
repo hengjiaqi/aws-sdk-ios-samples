@@ -15,8 +15,8 @@
 
 
 // Constants used to represent your AWS Credentials.
-#define ACCESS_KEY_ID          @"CHANGE ME"
-#define SECRET_KEY             @"CHANGE ME"
+#define ACCESS_KEY_ID          @"AKIAJ2HG4IXIZETRWC2A"
+#define SECRET_KEY             @"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"
 
 
 // Constants for the Bucket and Object name.

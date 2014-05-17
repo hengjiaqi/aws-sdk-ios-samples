@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE080D5819268B1E00F29EA3 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE080D5419268B1D00F29EA3 /* AWSRuntime.framework */; };
+		BE080D5919268B1E00F29EA3 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE080D5519268B1D00F29EA3 /* AWSS3.framework */; };
+		BE080D5A19268B1E00F29EA3 /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE080D5619268B1D00F29EA3 /* AWSSimpleDB.framework */; };
+		BE080D5B19268B1E00F29EA3 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE080D5719268B1D00F29EA3 /* AWSSNS.framework */; };
 		CE1B8398161A16C100856E2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1B8397161A16C100856E2F /* Default-568h@2x.png */; };
 		D00F6B9E141FEA1800A058E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F6B9D141FEA1800A058E8 /* UIKit.framework */; };
 		D00F6BA0141FEA1800A058E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F6B9F141FEA1800A058E8 /* Foundation.framework */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE080D5419268B1D00F29EA3 /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRuntime.framework; sourceTree = "<group>"; };
+		BE080D5519268B1D00F29EA3 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		BE080D5619268B1D00F29EA3 /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSimpleDB.framework; sourceTree = "<group>"; };
+		BE080D5719268B1D00F29EA3 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
 		CE1B8397161A16C100856E2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D00F6B99141FEA1800A058E8 /* S3Uploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = S3Uploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00F6B9D141FEA1800A058E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -43,6 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE080D5819268B1E00F29EA3 /* AWSRuntime.framework in Frameworks */,
+				BE080D5919268B1E00F29EA3 /* AWSS3.framework in Frameworks */,
+				BE080D5A19268B1E00F29EA3 /* AWSSimpleDB.framework in Frameworks */,
+				BE080D5B19268B1E00F29EA3 /* AWSSNS.framework in Frameworks */,
 				D00F6B9E141FEA1800A058E8 /* UIKit.framework in Frameworks */,
 				D00F6BA0141FEA1800A058E8 /* Foundation.framework in Frameworks */,
 				D00F6BA2141FEA1800A058E8 /* CoreGraphics.framework in Frameworks */,
@@ -72,6 +84,10 @@
 		D00F6B9C141FEA1800A058E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE080D5419268B1D00F29EA3 /* AWSRuntime.framework */,
+				BE080D5519268B1D00F29EA3 /* AWSS3.framework */,
+				BE080D5619268B1D00F29EA3 /* AWSSimpleDB.framework */,
+				BE080D5719268B1D00F29EA3 /* AWSSNS.framework */,
 				D00F6B9D141FEA1800A058E8 /* UIKit.framework */,
 				D00F6B9F141FEA1800A058E8 /* Foundation.framework */,
 				D00F6BA1141FEA1800A058E8 /* CoreGraphics.framework */,
@@ -236,7 +252,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "S3Uploader/S3Uploader-Prefix.pch";
@@ -254,7 +273,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "S3Uploader/S3Uploader-Prefix.pch";
 				GCC_VERSION = "";
